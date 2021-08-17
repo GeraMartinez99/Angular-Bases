@@ -1,0 +1,24 @@
+<h1>{{nombre}}</h1>
+<dl>
+    <td>Nombre: </td>
+    <dd>{{nombre}}</dd>
+    
+    <td>Edad</td>
+    <dd>{{edad}}</dd>
+    
+    <td>Método</td>
+    <dd>{{obtenerNombre()}}</dd>
+
+    <td>Nombre Capitalizado:</td>
+    <!-- <dd>{{nombre.toUpperCase()}}</dd> 
+    Como se puede observar al tratarse de un get no es necesario poner ()
+    ya que no es un método-->
+    <dd>{{nombreCapitalizado}}</dd>
+</dl>
+
+<button (click)="cambiarNombre()">
+Cambiar Héroe
+</button>
+<button (click)="cambiarEdad()">
+Cambiar edad 
+</button>
